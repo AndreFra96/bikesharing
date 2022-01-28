@@ -1,0 +1,4 @@
+--patch-module
+com.andreabrioschi.bikesharing=_
+--add-reads
+com.andreabrioschi.bikesharing=ALL-UNNAMED

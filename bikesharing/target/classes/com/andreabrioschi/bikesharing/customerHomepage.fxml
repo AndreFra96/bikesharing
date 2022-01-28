@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andreabrioschi.bikesharing.controllers.CustomerHomepageController">
+    <children>
+        <Label text="Homepage cliente" />
+      <Label fx:id="noleggioAttivo" />
+      <Button fx:id="ritira" mnemonicParsing="false" onAction="#routeRitiraBicicletta" prefHeight="26.0" prefWidth="170.0" text="Ritira bicicletta" />
+      <Button fx:id="riconsegna" mnemonicParsing="false" onAction="#handleSimulaRiconsegna" text="Simula Riconsegna bicicletta">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="segnala" mnemonicParsing="false" onAction="#handleSegnalaDanni" prefHeight="26.0" prefWidth="174.0" text="Segnalazione danni">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="errorMessage" textFill="RED">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+        <Button fx:id="logout" onAction="#logout" text="Esci" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
